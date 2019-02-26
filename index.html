@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>:kmr:</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="public/stylesheets/normalize.css">
+    <link rel="stylesheet" href="public/stylesheets/skeleton.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="u-full-width">
+          <h2>GBF <img src="public/images/general/blue.png"> Tracker <img src="public/images/general/dedj.png"></h2>
+          <select id="raid" onchange="init()">
+          	<option value="grimnir">Grimnir</option>
+          	<option value="shiva">Shiva</option>
+          	<option value="europa">Europa</option>
+          	<option value="alexiel">Alexiel</option>
+          	<option value="metatron">Metatron</option>
+          	<option value="avatar">Avatar</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="twelve columns">
+          <button id="bNone">NONE</button>
+          <h5 id="None"></h5>
+        </div>
+      </div>
+      <div class="row">
+        <div class="two columns">
+          <button id="bWep1"><img id="imgWep1" src=""></button>
+          <h5 id="Wep1"></h5>
+        </div>
+        <div class="two columns">
+          <button id="bWep2"><img id="imgWep2" src=""></button>
+          <h5 id="Wep2"></h5>
+        </div>
+        <div class="two columns">
+          <button id="bWep3"><img id="imgWep3" src=""></button>
+          <h5 id="Wep3"></h5>
+        </div>
+        <div class="two columns">
+          <button id="bAnima"><img id="imgAnima" src=""></button>
+          <h5 id="Anima"></h5>
+        </div>
+        <div class="two columns">
+          <button id="bOmega"><img id="imgOmega" src=""></button>
+          <h5 id="Omega"></h5>
+        </div>
+        <div class="two columns">
+          <button id="bQuartz"><img id="imgQuartz" src=""></button>
+          <h5 id="Quartz"></h5>
+        </div>
+      </div>
+      <div class="row">
+        <div class="two columns">
+          <button id="bBerry"><img id="imgBerry" src=""></button>
+          <h5 id="Berry"></h5>
+        </div>
+        <div class="two columns">
+          <button id="bBalm"><img id="imgBalm" src=""></button>
+          <h5 id="Balm"></h5>
+        </div>
+        <div class="two columns">
+          <button id="bTrueAnima"><img id="imgTrueAnima" src=""></button>
+          <h5 id="TrueAnima"></h5>
+        </div>
+        <div class="two columns">
+          <button id="bMerit"><img id="imgMerit" src=""></button>
+          <h5 id="Merit"></h5>
+        </div>
+        <div class="two columns">
+          <button id="bMunition"><img id="imgMunition" src=""></button>
+          <h5 id="Munition"></h5>
+        </div>
+      </div>
+      <div class="row">
+        <div class="twelve columns">
+          <h4>Total</h4>
+          <h5 id="Total"></h5>
+        </div>
+      </div>
+      <div class="row">
+        <div class="six columns">
+          <button onclick="save()">Save</button>
+        </div>
+        <div class="six columns">
+          <button onclick="reset()">RESET</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="req.js"></script>
+  <script src="master_data.js"></script>
+  <script src="functions.js"></script>
+  <script type="text/javascript">
+
+    //Initialize first raid in dropdown list
+    init('grimnir');
+
+    //CLICK HANDLERS
+
+    document.getElementById('bNone').addEventListener('click', function(){
+    	clickHandle('None');
+    });
+    document.getElementById('bWep1').addEventListener('click', function(){
+    	clickHandle('Wep1');
+    });
+    document.getElementById('bWep2').addEventListener('click', function(){
+    	clickHandle('Wep2');
+    });
+    document.getElementById('bWep3').addEventListener('click', function(){
+    	clickHandle('Wep3');
+    });
+    document.getElementById('bAnima').addEventListener('click', function(){
+    	clickHandle('Anima');
+    });
+    document.getElementById('bOmega').addEventListener('click', function(){
+    	clickHandle('Omega');
+    });
+    document.getElementById('bQuartz').addEventListener('click', function(){
+    	clickHandle('Quartz');
+    });
+    document.getElementById('bBerry').addEventListener('click', function(){
+    	clickHandle('Berry');
+    });
+    document.getElementById('bBalm').addEventListener('click', function(){
+    	clickHandle('Balm');
+    });
+    document.getElementById('bTrueAnima').addEventListener('click', function(){
+    	clickHandle('TrueAnima');
+    });
+    document.getElementById('bMerit').addEventListener('click', function(){
+    	clickHandle('Merit');
+    });
+    document.getElementById('bMunition').addEventListener('click', function(){
+    	clickHandle('Munition');
+    });
+
+  </script>
+</html>
