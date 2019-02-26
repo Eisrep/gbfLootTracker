@@ -97,46 +97,85 @@
   <script src="functions.js"></script>
   <script type="text/javascript">
 
-    //Initialize first raid in dropdown list
+  	//Initialize first raid in dropdown list
     init('grimnir');
 
     //CLICK HANDLERS
-
+    //Add
     document.getElementById('bNone').addEventListener('click', function(){
-    	clickHandle('None');
+      addHandle('None');
     });
     document.getElementById('bWep1').addEventListener('click', function(){
-    	clickHandle('Wep1');
+      addHandle('Wep1');
     });
     document.getElementById('bWep2').addEventListener('click', function(){
-    	clickHandle('Wep2');
+      addHandle('Wep2');
     });
     document.getElementById('bWep3').addEventListener('click', function(){
-    	clickHandle('Wep3');
+      addHandle('Wep3');
     });
     document.getElementById('bAnima').addEventListener('click', function(){
-    	clickHandle('Anima');
+      addHandle('Anima');
     });
     document.getElementById('bOmega').addEventListener('click', function(){
-    	clickHandle('Omega');
+      addHandle('Omega');
     });
     document.getElementById('bQuartz').addEventListener('click', function(){
-    	clickHandle('Quartz');
+      addHandle('Quartz');
     });
     document.getElementById('bBerry').addEventListener('click', function(){
-    	clickHandle('Berry');
+      addHandle('Berry');
     });
     document.getElementById('bBalm').addEventListener('click', function(){
-    	clickHandle('Balm');
+      addHandle('Balm');
     });
     document.getElementById('bTrueAnima').addEventListener('click', function(){
-    	clickHandle('TrueAnima');
+      addHandle('TrueAnima');
     });
     document.getElementById('bMerit').addEventListener('click', function(){
-    	clickHandle('Merit');
+      addHandle('Merit');
     });
     document.getElementById('bMunition').addEventListener('click', function(){
-    	clickHandle('Munition');
+      addHandle('Munition');
+    });
+
+    //Sub
+
+    document.getElementById('None').addEventListener('click', function(){
+        subHandle('None');
+    });
+    document.getElementById('Wep1').addEventListener('click', function(){
+        subHandle('Wep1');
+    });
+    document.getElementById('Wep2').addEventListener('click', function(){
+        subHandle('Wep2');
+    });
+    document.getElementById('Wep3').addEventListener('click', function(){
+        subHandle('Wep3');
+    });
+    document.getElementById('Anima').addEventListener('click', function(){
+        subHandle('Anima');
+    });
+    document.getElementById('Omega').addEventListener('click', function(){
+        subHandle('Omega');
+    });
+    document.getElementById('Quartz').addEventListener('click', function(){
+        subHandle('Quartz');
+    });
+    document.getElementById('Berry').addEventListener('click', function(){
+        subHandle('Berry');
+    });
+    document.getElementById('Balm').addEventListener('click', function(){
+        subHandle('Balm');
+    });
+    document.getElementById('TrueAnima').addEventListener('click', function(){
+        subHandle('TrueAnima');
+    });
+    document.getElementById('Merit').addEventListener('click', function(){
+        subHandle('Merit');
+    });
+    document.getElementById('Munition').addEventListener('click', function(){
+        subHandle('Munition');
     });
 
   </script>

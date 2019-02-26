@@ -70,10 +70,18 @@ function reset(){
     document.getElementById('Total').innerHTML = data[raid].Total;
 }
 
-function clickHandle(id){
+function addHandle(id){
     let raid = document.getElementById('raid').value;
     data[raid][id] += 1;
     data[raid].Total += 1;
+    document.getElementById(id).innerHTML = data[raid][id];
+    document.getElementById('Total').innerHTML = data[raid].Total;
+}
+
+function subHandle(id){
+    let raid = document.getElementById('raid').value;
+    data[raid][id] -= 1;
+    data[raid].Total -= 1;
     document.getElementById(id).innerHTML = data[raid][id];
     document.getElementById('Total').innerHTML = data[raid].Total;
 }
