@@ -1,1 +1,0 @@
-var data={"None":0,"Wep1":0,"Wep2":0,"Wep3":0,"Anima":0,"Omega":0,"Quartz":0,"Berry":0,"Balm":0,"TrueAnima":0,"Merit":0,"Munition":0}
